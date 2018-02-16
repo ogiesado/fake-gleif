@@ -7,6 +7,7 @@ import {
   text as textParser,
   raw as rawParser,
 } from 'body-parser';
+import downloadController from './downloadController';
 
 /**
  * Bootstraps the server
@@ -30,6 +31,8 @@ export default (async function makeServer() {
         `Download a specific file by ${env('APP_URL')}/lei2/{YYYYMMDD}/zip`
       );
     });
+
+    server.get('/lei2/:date/zip', downloadController);
 
     server.use(function logErrors(err, req, res, next) {
       console.error(err.stack);

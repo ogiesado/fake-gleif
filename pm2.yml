@@ -1,7 +1,0 @@
-apps:
-  - script   : ./index.js
-    name     : 'gleif'
-    instances: 1
-    exec_mode: fork
-    watch  : true,
-    ignore_watch: ['node_modules', '.git', 'storage', '\.sh$']
