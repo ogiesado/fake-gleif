@@ -1,0 +1,18 @@
+version: "2.2"
+
+services:
+
+  gleif:
+    container_name: gleif
+    image: node:9.4.0-alpine
+    init: true
+    env_file: .env
+    user: node
+    working_dir: /home/node/gleif
+    expose:
+      - "8080"
+    ports:
+     - "3081:8080"
+    volumes:
+      - "./:/home/node/gleif"
+    command: ./start.sh
