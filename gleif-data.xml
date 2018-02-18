@@ -3,7 +3,7 @@
   <lei:LEIHeader>
     <lei:ContentDate>2018-02-04T09:00:01+00:00</lei:ContentDate>
     <lei:FileContent>GLEIF_FULL_PUBLISHED</lei:FileContent>
-    <lei:RecordCount>1079232</lei:RecordCount>
+    <lei:RecordCount>20</lei:RecordCount>
     <lei:Extension>
       <gleif:Sources>
         <gleif:Source>
